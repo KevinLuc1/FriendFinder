@@ -15,7 +15,7 @@ module.exports = function(app) {
 
 	// Add new friend entry
 	app.post('/api/friends', function(req, res) {
-		// Capture the user input object
+	
 		var userInput = req.body;
 		// console.log('userInput = ' + JSON.stringify(userInput));
 
@@ -25,7 +25,7 @@ module.exports = function(app) {
 		// Compute best friend match
 		var matchName = '';
 		var matchImage = '';
-		var totalDifference = 10000; // Make the initial value big for comparison
+		var totalDifference = 10000; 
 
 		// Examine all existing friends in the list
 		for (var i = 0; i < friends.length; i++) {
